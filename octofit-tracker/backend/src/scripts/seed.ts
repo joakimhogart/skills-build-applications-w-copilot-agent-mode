@@ -3,12 +3,12 @@
  * This script populates MongoDB with users, teams, activities, leaderboard entries, and workouts.
  */
 
-import { connectDatabase } from "../db";
-import User from "../models/User";
-import Team from "../models/Team";
-import Activity from "../models/Activity";
-import LeaderboardEntry from "../models/LeaderboardEntry";
-import Workout from "../models/Workout";
+import { connectDatabase } from "../db.js";
+import User from "../models/User.js";
+import Team from "../models/Team.js";
+import Activity from "../models/Activity.js";
+import LeaderboardEntry from "../models/LeaderboardEntry.js";
+import Workout from "../models/Workout.js";
 
 async function seed() {
   console.log("Seed the octofit_db database with test data");

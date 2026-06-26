@@ -4,7 +4,7 @@ import {
   createActivity,
   getActivity,
   deleteActivity
-} from "../controllers/activityController";
+} from "../controllers/activityController.js";
 
 const router = Router();
 

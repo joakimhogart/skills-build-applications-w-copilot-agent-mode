@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import Activity from "../models/Activity";
+import Activity from "../models/Activity.js";
 
 export async function listActivities(req: Request, res: Response) {
   const activities = await Activity.find().sort({ performedAt: -1 });
